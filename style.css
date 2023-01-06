@@ -1,5 +1,6 @@
 body{
     background-color: #fafafa;
+    min-height: 100vh;
 
 }
 
@@ -13,6 +14,7 @@ body{
 .body{
     display:flex;
     flex-wrap: wrap;
+    
 }
 
 .images-container{
@@ -38,11 +40,16 @@ body{
     width:350px;
     height: 450px;
     border: 1px solid lightgray;
-    margin-top: 5%;
-    margin-left: 10%;
-    justify-content: center;
+    margin-top: 4%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
    
-    
+}
+
+.login-section > div{
+    justify-content: center;
 }
 
 .app-title{
@@ -53,7 +60,7 @@ body{
     width: 250px;
     height:150px;
     object-fit: contain;
-    scale:0.8;
+    background-color: transparent;
 }
 
 .login-form{
@@ -71,6 +78,10 @@ body{
   
 }
 
+.password-section a{
+    text-decoration: none;
+    color:#375085;
+}
 #password-input{
     margin-top:8px;
 }
@@ -79,10 +90,11 @@ body{
     background-color: #67b6fa;
     width:275px;
     height:40px;
-    justify-content: center;
     margin-top: 5%;
     border-radius: 12px;
     color:white;
+    border-style: none;
+    justify-content: center;
 }
 
 .login-option2{
@@ -94,15 +106,11 @@ body{
     display: flex;
 }
 
-#line-left{
-    align: left;
-}
 
 .facebook{
     display: flex;
-   /*  align-items: center;
-    justify-content: center; */
-    text-align: center;
+   align-items: center;
+   gap:10px;
 
 }
 
@@ -110,7 +118,7 @@ body{
     width:18px;
     height:20px;
     object-fit: contain;
-    margin-top: 2%;
+   
 }
 
 .password-font{
@@ -120,9 +128,10 @@ body{
 }
 
 .bold-font{
-    font-weight: 500;
-    font-style: bold;
+    font-weight:600;
+
     font-size: 16px;
+    
      
 }
 
@@ -131,7 +140,7 @@ body{
     height:60px;
     border: 1px solid lightgray;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 #signup-font{
@@ -149,11 +158,13 @@ body{
 }
 
 .icons{
-    margin-left:55%;
+    margin-left:56%;
+    margin-top: -7%;
+    
 }
 
 .store-icons{
-    width:15%;
+    width:23%;
     aspect-ratio: 3/2;
     object-fit: contain;
     
@@ -186,4 +197,36 @@ body{
     .error{
         display: block;
     }
+}
+
+.sticky-footer{
+    position: sticky;
+    top:100%;
+ 
+}
+
+.footer-list{
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+gap: 2%;
+margin-left: 20%;
+font-size: 12px;
+line-height: 16px;
+}
+
+.footer-list a{
+    text-decoration: none;
+    list-style: none;
+    color:#929292;
+
+}
+
+.languag-and-rights{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 16px;
+    color: #929292;
+
 }

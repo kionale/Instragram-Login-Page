@@ -25,13 +25,18 @@
             <div class="app-title">
                 <img id="title" src="images/ins-title.jpg" alt="">
             </div>
-            <form class="login-form">
-                <input type="text" class="input-box" id="login-input" name="login"
-                    placeholder="Phone number, username or emial" required>
-                <input type="password" class="input-box" id="password-input" placeholder="password" required>
+            <div class="login-form">
+                <form>
+                    <input type="text" class="input-box" id="login-input" name="login"
+                        placeholder="Phone number, username or emial" required>
+                    <input type="password" class="input-box" id="password-input" placeholder="password" required>
 
-            </form>
-            <button id="login-btn" onclick="login()">Log in</button>
+                </form>
+            </div>
+            <div class="loginButton">
+                <button id="login-btn" onclick="login()">Log in</button>
+            </div>
+
             <div class="login-option2">
 
                 <p class="password-font">OR</p>
@@ -39,8 +44,12 @@
             </div>
 
             <div class="facebook">
-                <img id="facebook-icon" src="images/facebook icon.png" alt="">
-                <p class="password-font bold-font">Log in with Facebook</p>
+                <div>
+                    <img id="facebook-icon" src="images/facebook icon.png" alt="">
+                </div>
+                <div>
+                    <p class="password-font bold-font">Log in with Facebook</p>
+                </div>
             </div>
 
             <div class="password-section">
@@ -51,7 +60,7 @@
                 <p>Don't have an accont? <span id="signup-font">Sign up</span></p>
             </div>
 
-            <p class="action">Get the App</p>
+            <p class="action">Get the app</p>
         </div>
 
         <div class="icons">
@@ -67,11 +76,34 @@
 
     </div>
 
+    <footer class="sticky-footer">
+        <ul class="footer-list">
+            <li><a href="https://about.meta.com/">Meta</a></li>
+            <li><a href="https://about.instagram.com/">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">API</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Top Accounts</a></li>
+            <li><a href="">Instagram Lite</a></li>
+            <li><a href="">Contact Uploading & Non-users</a></li>
+        </ul>
+        <div class="languag-and-rights">
+            <p>English > &nbsp;&nbsp;</p>
+            <p>© 2023 Instagram from Meta</p>
+        </div>
+
+    </footer>
+
     <script>
         function login() {
 
         }
     </script>
 </body>
+
+
 
 </html>
