@@ -1,20 +1,34 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+/* Variables */
 :root{
     --background-white:#fafafa;
     --dark-blue:#375085;
     --light-blue:#67b6fa;
     --footer-gray:#929292;
+    --ff-primary:"Roboto", sans-serif;
 }
 
+/* Global Styles */
 body{
-    background-color: #fafafa;
+    background: var(--background-white);
+    font-family: var(--ff-primary);
     min-height: 100vh;
 
 }
 
-*{
-    font-family: 'Roboto', sans-serif;
+
+ul{
+    list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
+
+/* Global classes */
 .error{
     display: none;
 }
@@ -52,7 +66,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+   max-width: var(--fix-width);
 }
 
 .login-section > div{
@@ -193,11 +207,9 @@ body{
    }
    .login-section{
     width:100%;
+    max-width: var(--fix-width);
    }
-   .footer{
-    width:50%;
-    justify-content: center;
-   }
+   
 }
 
 /* View for iphone XR */
@@ -207,6 +219,7 @@ body{
    }
    .login-section{
     width:100%;
+    max-width: var(--fix-width);
    }
 }
 
